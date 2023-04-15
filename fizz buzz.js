@@ -1,10 +1,26 @@
-let str = '';
-let str1 = '';
-str = prompt('enter a sentence:');
-let i = str.length;
-for(let a = i-1 ; a>=0; a--)
+let a = prompt("enter first number: ");
+let b = prompt("enter second number");
+for(let i = 1 ; i<=100; i = i+1 )
 {
-   str1= str1+str[a];
+   if( i%a == 0)
+{
+      
+      if( i%b ==0)
+      {
+         console.log("fizz "+ "buzz");
+      }
+      else{
+         console.log("fizz");
+      }
 }
-console.log(str1);
+   else if(i%b == 0)
+ { 
+   console.log("buss");
+ }
+
+else
+{
+   console.log(i)
+}
+  }
 
